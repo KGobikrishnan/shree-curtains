@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="curtainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="#1e1b18" />
+  <rect x="12" y="12" width="176" height="176" rx="32" fill="none" stroke="url(#curtainGrad)" stroke-width="3" stroke-dasharray="6,4" opacity="0.6" />
+  <!-- Rod / Pelmet bar -->
+  <rect x="35" y="44" width="130" height="8" rx="4" fill="url(#curtainGrad)" />
+  <circle cx="34" cy="48" r="6" fill="#F59E0B" />
+  <circle cx="166" cy="48" r="6" fill="#F59E0B" />
+  <!-- Left Curtain Drape with elegant pleat curves -->
+  <path d="M 44 52 C 44 95, 66 115, 62 145 C 58 147, 42 147, 40 145 C 48 115, 46 95, 46 52 Z" fill="url(#curtainGrad)" />
+  <path d="M 52 52 C 54 95, 78 115, 72 145 C 67 147, 56 147, 54 145 C 62 115, 56 95, 54 52 Z" fill="#FBBF24" opacity="0.85" />
+  <path d="M 60 52 C 64 95, 88 115, 80 145 C 75 147, 66 147, 64 145 C 72 115, 66 95, 62 52 Z" fill="#D97706" />
+  <!-- Left Tie-back band -->
+  <path d="M 42 108 Q 58 115 76 110" stroke="#FFF" stroke-width="3.5" fill="none" stroke-linecap="round" />
+  
+  <!-- Right Curtain Drape with elegant pleat curves -->
+  <path d="M 156 52 C 156 95, 134 115, 138 145 C 142 147, 158 147, 160 145 C 152 115, 154 95, 154 52 Z" fill="url(#curtainGrad)" />
+  <path d="M 148 52 C 146 95, 122 115, 128 145 C 133 147, 144 147, 146 145 C 138 115, 144 95, 146 52 Z" fill="#FBBF24" opacity="0.85" />
+  <path d="M 140 52 C 136 95, 112 115, 120 145 C 125 147, 134 147, 136 145 C 128 115, 134 95, 138 52 Z" fill="#D97706" />
+  <!-- Right Tie-back band -->
+  <path d="M 158 108 Q 142 115 124 110" stroke="#FFF" stroke-width="3.5" fill="none" stroke-linecap="round" />
+  
+  <!-- Bottom Brand Text -->
+  <text x="100" y="174" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#F59E0B" letter-spacing="2">SHREE</text>
+</svg>
