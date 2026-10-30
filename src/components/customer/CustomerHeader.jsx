@@ -151,7 +151,7 @@ export const CustomerHeader = () => {
               className="w-full flex items-center justify-between p-3 bg-slate-50 hover:bg-pink-50/50 rounded-2xl text-xs font-bold text-slate-800 transition-colors cursor-pointer"
             >
               <span className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-pink-600" /> Boutique Information & Address
+                <MapPin className="w-4 h-4 text-pink-600" /> Showroom Information & Address
               </span>
               <ChevronRight className="w-4 h-4 text-slate-400" />
             </button>
@@ -326,7 +326,7 @@ export const CustomerHeader = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Sparkles className="w-4 h-4 text-pink-500 shrink-0" />
-                <span>Exclusive Designer Sarees &amp; Ethnic Wear</span>
+                <span>Specialist in Curtains, Mosquito Doors, Blinds &amp; Netlon</span>
               </div>
             </div>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
-import { UMAIYAAL_SERVICE_CATEGORIES, UMAIYAAL_SERVICES } from '../../data/mockData';
+import { SHREE_SERVICE_CATEGORIES, SHREE_SERVICES } from '../../data/mockData';
 import {
   ShieldCheck,
   CheckCircle2,
@@ -55,7 +55,7 @@ export const ServiceSelectionScreen = () => {
   };
 
   // Filter services by category and search
-  const filteredServices = UMAIYAAL_SERVICES.filter((service) => {
+  const filteredServices = SHREE_SERVICES.filter((service) => {
     const matchesSearch = service.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           service.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           service.category.toLowerCase().includes(searchQuery.toLowerCase());

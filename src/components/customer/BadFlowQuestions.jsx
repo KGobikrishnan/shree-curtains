@@ -47,7 +47,7 @@ export const BadFlowQuestions = () => {
           Your feedback has been sent directly to the team at <span className="font-bold text-slate-900">{business.name}</span>.
           {wantsCallback && contactInfo && (
             <span className="block mt-1.5 text-emerald-800 font-bold bg-emerald-50 border border-emerald-200 p-2 rounded-xl">
-              Our boutique stylist will reach out to you to assist with size exchange or resolving this immediately.
+              Our team will reach out to you promptly to assist with measurement inspection or resolving this immediately.
             </span>
           )}
         </p>
@@ -179,7 +179,7 @@ export const BadFlowQuestions = () => {
           type="submit"
           className="w-full py-3.5 bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 text-white rounded-2xl font-black text-xs shadow-lg shadow-rose-600/20 flex items-center justify-center gap-2 transition-all cursor-pointer"
         >
-          <Send className="w-4 h-4" /> Send Feedback Privately to Boutique
+          <Send className="w-4 h-4" /> Send Feedback Privately to Store
         </button>
 
         <div className="flex items-center justify-center gap-1.5 text-[10px] text-slate-400 text-center font-medium">

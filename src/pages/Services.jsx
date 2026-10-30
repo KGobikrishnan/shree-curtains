@@ -17,7 +17,7 @@ import {
   Filter,
   Search
 } from 'lucide-react';
-import { UMAIYAAL_SERVICE_CATEGORIES, UMAIYAAL_SERVICES } from '../data/mockData';
+import { SHREE_SERVICE_CATEGORIES, SHREE_SERVICES } from '../data/mockData';
 import { ServiceCard } from '../components/ServiceCard';
 
 export const Services = () => {
@@ -26,7 +26,7 @@ export const Services = () => {
   const [activeTab, setActiveTab] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredCategories = UMAIYAAL_SERVICE_CATEGORIES.map(cat => ({
+  const filteredCategories = SHREE_SERVICE_CATEGORIES.map(cat => ({
     ...cat,
     items: cat.items.filter(item => {
       const matchSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -39,13 +39,12 @@ export const Services = () => {
   })).filter(cat => cat.items.length > 0);
 
   const tabs = [
-    { id: 'all', label: 'All Collections (24)' },
-    { id: 'cat_sarees', label: 'Sarees (8)' },
-    { id: 'cat_chudi_coord', label: 'Chudi & Co-ords (3)' },
-    { id: 'cat_dresses_kurtis', label: 'Kurtis & Maxis (2)' },
-    { id: 'cat_bottom_wear', label: 'Bottom Wear (4)' },
-    { id: 'cat_shawls_dupattas', label: 'Shawls (4)' },
-    { id: 'cat_essentials_jewellery', label: 'Jewellery & Essentials (4)' }
+    { id: 'all', label: 'All Collections (18)' },
+    { id: 'cat_curtains', label: 'Curtains (5)' },
+    { id: 'cat_mosquito_doors', label: 'Mosquito Doors (3)' },
+    { id: 'cat_blinds', label: 'Window Blinds (4)' },
+    { id: 'cat_netlon', label: 'Netlon Mesh (3)' },
+    { id: 'cat_furnishing', label: 'Home Furnishing (3)' }
   ];
 
   const totalItemCount = filteredCategories.reduce((acc, cat) => acc + cat.items.length, 0);
@@ -252,7 +251,7 @@ export const Services = () => {
         )}
       </main>
 
-      {/* Boutique Highlights Banner */}
+      {/* Showroom Highlights Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="rounded-3xl bg-gradient-to-b from-[#1c0c2c] to-[#12071d] border border-[#36184d] p-8 sm:p-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#ec4899]/10 rounded-full blur-3xl pointer-events-none" />

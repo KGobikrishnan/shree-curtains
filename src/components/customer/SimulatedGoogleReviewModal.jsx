@@ -47,7 +47,7 @@ export const SimulatedGoogleReviewModal = () => {
     });
 
     // 3. Open Google Maps review place URL in new window
-    window.open(business.googlePlaceUrl || 'https://g.page/r/CSkwyUzjxg-pEBM/review', '_blank');
+    window.open(business.googlePlaceUrl || 'https://g.page/r/CTONmpLlmZu-EBM/review', '_blank');
 
     // 4. Show Beautiful Animated "Thanks for your review!" popup
     setIsSubmitted(true);

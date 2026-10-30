@@ -111,7 +111,7 @@ export const ReviewDraftScreen = () => {
     }
 
     // 2. Open Google Review URL directly
-    const targetUrl = business.googlePlaceUrl || 'https://g.page/r/CSkwyUzjxg-pEBM/review';
+    const targetUrl = business.googlePlaceUrl || 'https://g.page/r/CTONmpLlmZu-EBM/review';
     window.open(targetUrl, '_blank', 'noopener,noreferrer');
 
     // 3. Trigger thank-you modal

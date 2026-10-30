@@ -12,14 +12,13 @@ import {
   Heart
 } from 'lucide-react';
 
-// Map icons to boutique services
+// Map icons to curtain and interior services
 const ICON_MAP = {
-  sarees: Sparkles,
-  chudi: Shirt,
-  kurtis: Crown,
-  pants: Layers,
-  shawls: Feather,
-  jewellery: Gem
+  curtains: Sparkles,
+  mosquito_doors: Shirt,
+  blinds: Crown,
+  netlon: Layers,
+  furnishing: Feather
 };
 
 export const ServiceCard = ({ service, onEnquire }) => {

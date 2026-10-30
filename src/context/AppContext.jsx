@@ -67,7 +67,7 @@ export const AppProvider = ({ children }) => {
 
       const res = await api.generateAiReview({
         businessName: business.name,
-        businessCategory: business.category || business.tagline || "Women's Boutique & Designer Clothing",
+        businessCategory: business.category || business.tagline || "Curtains, Blinds, Mosquito Doors & Interior Furnishing",
         selectedServices: activeServices,
         tags: activeTags,
         customerComment: activeComment,

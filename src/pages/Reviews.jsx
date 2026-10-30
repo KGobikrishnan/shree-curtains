@@ -60,10 +60,10 @@ const REVIEWS_DATA = [
     rating: 5,
     date: '3 weeks ago',
     location: 'Theni',
-    service: 'Bottom Wear',
-    category: 'Cotton Pants & Leggings',
+    service: 'Netlon',
+    category: 'Velcro Mosquito Netlon',
     verified: true,
-    comment: 'Picked their 4-way stretch leggings and cotton straight pants. The comfort level is top-notch. Perfect ankle length and zero transparency. Also picked shimmer leggings for a sangeet event!'
+    comment: 'Got velcro mosquito netlon installed for all bedroom windows in our apartment. Fiberglass mesh quality is super durable, lets cool evening breeze in with zero mosquitoes. Very neat stickering work!'
   },
   {
     id: 5,
@@ -71,10 +71,10 @@ const REVIEWS_DATA = [
     rating: 5,
     date: '1 month ago',
     location: 'Uthamapalayam',
-    service: 'Shawls',
-    category: 'Embroidery Shawls',
+    service: 'Furnishing',
+    category: 'Sofa Upholstery & Cushions',
     verified: true,
-    comment: 'The embroidery work shawls and lightweight chiffon dupattas took my simple outfit to a whole new level! High aesthetic appeal and very soft feel on the skin. Great hospitality from the boutique team.'
+    comment: 'Re-upholstered our 7-seater wooden sofa set and ordered custom velvet throw cushions from Shree Curtains. Superior high-GSM upholstery fabric and very fine piping finish. Looks brand new!'
   },
   {
     id: 6,
@@ -82,10 +82,10 @@ const REVIEWS_DATA = [
     rating: 4,
     date: '1 month ago',
     location: 'Periyakulam',
-    service: 'Sarees',
-    category: 'Cut Work Sarees',
+    service: 'Curtains',
+    category: '100% Blackout Curtains',
     verified: true,
-    comment: 'Travelled from Periyakulam especially for their cut work and raw silk sarees. Amazing collection with modern color palettes. Store was crowded on Sunday, but the final saree drape made it worth every minute.'
+    comment: 'Travelled from Periyakulam especially for custom blackout hotel-grade curtains. Cuts out 100% harsh afternoon sunlight and reduces heat drastically. High quality brass grommets used.'
   },
   {
     id: 7,
@@ -93,10 +93,10 @@ const REVIEWS_DATA = [
     rating: 5,
     date: '1 month ago',
     location: 'Theni',
-    service: 'Jewellery',
-    category: 'Artificial Jewellery',
+    service: 'Window Blinds',
+    category: 'Wooden Venetian Blinds',
     verified: true,
-    comment: 'Purchased bridal artificial jewellery sets along with matching chudi sets. The antique finish looks identical to authentic gold jewellery. Got so many compliments in family photos!'
+    comment: 'Purchased natural basswood venetian blinds for our study room. The tilt mechanism and wooden slat finish look executive and classy. Professional site measurement and on-time installation.'
   },
   {
     id: 8,
@@ -104,10 +104,10 @@ const REVIEWS_DATA = [
     rating: 5,
     date: '2 months ago',
     location: 'Madurai Highway',
-    service: 'Chudi Sets',
-    category: 'Mul Cotton Chudi Sets',
+    service: 'Mosquito Doors',
+    category: 'Pleated Mesh Doors',
     verified: true,
-    comment: 'Their pure Mul cotton chudi sets are an absolute must-have for summer. Feather-light, soft on sensitive skin, and elegant prints. Truly worth every single rupee!'
+    comment: 'Installed pleated retractable mosquito screen doors for our main entrance and French door. Barrier-free bottom track makes it super easy for elders and children. Truly worth every single rupee!'
   },
   {
     id: 9,
@@ -115,10 +115,10 @@ const REVIEWS_DATA = [
     rating: 4,
     date: '2 months ago',
     location: 'Theni City',
-    service: 'Kurtis',
-    category: 'Maternity & Nightwear',
+    service: 'Furnishing',
+    category: 'Designer Rods & Pelmets',
     verified: true,
-    comment: 'Bought maternity wear and feeding nightwear. The discreet side zips and soft cotton fabric make everyday routine so effortless and comfortable. Very thoughtful designs.'
+    comment: 'Got stainless steel curtain rods with antique crystal finials and custom pelmets installed. The hardware durability and anchoring are sturdy and solid. Very thoughtful guidance by A. Raja sir.'
   }
 ];
 
@@ -195,14 +195,16 @@ export const Reviews = () => {
       result = result.filter((r) => r.rating === 5);
     } else if (selectedFilter === '4★') {
       result = result.filter((r) => r.rating === 4);
-    } else if (selectedFilter === 'Sarees') {
-      result = result.filter((r) => r.service === 'Sarees');
-    } else if (selectedFilter === 'Chudi Sets') {
-      result = result.filter((r) => r.service === 'Chudi Sets');
-    } else if (selectedFilter === 'Kurtis') {
-      result = result.filter((r) => r.service === 'Kurtis');
-    } else if (selectedFilter === 'Shawls') {
-      result = result.filter((r) => r.service === 'Shawls');
+    } else if (selectedFilter === 'Curtains') {
+      result = result.filter((r) => r.service === 'Curtains');
+    } else if (selectedFilter === 'Mosquito Doors') {
+      result = result.filter((r) => r.service === 'Mosquito Doors');
+    } else if (selectedFilter === 'Window Blinds') {
+      result = result.filter((r) => r.service === 'Window Blinds');
+    } else if (selectedFilter === 'Netlon') {
+      result = result.filter((r) => r.service === 'Netlon');
+    } else if (selectedFilter === 'Furnishing') {
+      result = result.filter((r) => r.service === 'Furnishing');
     }
 
     if (selectedSort === 'highest') {
@@ -218,13 +220,14 @@ export const Reviews = () => {
     { label: 'All', value: 'All' },
     { label: '5★', value: '5★' },
     { label: '4★', value: '4★' },
-    { label: 'Sarees', value: 'Sarees' },
-    { label: 'Chudi Sets', value: 'Chudi Sets' },
-    { label: 'Kurtis', value: 'Kurtis' },
-    { label: 'Shawls', value: 'Shawls' }
+    { label: 'Curtains', value: 'Curtains' },
+    { label: 'Mosquito Doors', value: 'Mosquito Doors' },
+    { label: 'Window Blinds', value: 'Window Blinds' },
+    { label: 'Netlon', value: 'Netlon' },
+    { label: 'Furnishing', value: 'Furnishing' }
   ];
 
-  const googleReviewSubmissionUrl = "https://g.page/r/CSkwyUzjxg-pEBM/review";
+  const googleReviewSubmissionUrl = "https://g.page/r/CTONmpLlmZu-EBM/review";
 
   return (
     <div className="min-h-screen bg-[#0e0714] text-gray-100 font-['Plus_Jakarta_Sans',sans-serif] selection:bg-[#ec4899] selection:text-white pb-20">
@@ -322,7 +325,7 @@ export const Reviews = () => {
                     ))}
                   </div>
                   <div className="text-xs sm:text-sm font-semibold text-pink-100/80">
-                    ⭐ 4.9 / 5 — Based on <span className="text-[#ec4899] font-bold">500+ boutique reviews</span>
+                    ⭐ 4.9 / 5 — Based on <span className="text-[#ec4899] font-bold">850+ showroom reviews</span>
                   </div>
                 </div>
               </div>

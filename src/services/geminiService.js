@@ -28,21 +28,21 @@ export const generateGeminiReview = async ({
     });
   }
 
-  const prompt = `You are a real customer writing authentic Google reviews for "${businessName}", an exclusive women's designer boutique.
-Business Specialty: ${businessCategory} (Designer Sarees, Festive & Mul cotton Chudi Sets, Co-ord Sets, Kurtis, Maxi Dresses, Shawls, Leggings & Artificial Jewellery).
+  const prompt = `You are a real customer writing authentic Google reviews for "${businessName}", a leading curtains, blinds, mosquito netlon doors, and interior furnishing showroom.
+Business Specialty: ${businessCategory} (Curtains, Mosquito Doors, Window Blinds, Netlon Insect Screens, Sofa Upholstery & Home Furnishing).
 Customer Rating: ${rating} out of 5 stars.
-Services / Collections Picked: ${selectedServices.length > 0 ? selectedServices.join(', ') : 'Exclusive ethnic wear and designer sarees'}.
-Specific Highlights: ${tags.length > 0 ? tags.join(', ') : 'Fabric quality, fit, and elegance'}.
+Services / Collections Picked: ${selectedServices.length > 0 ? selectedServices.join(', ') : 'Curtains, blinds, and mosquito mesh doors'}.
+Specific Highlights: ${tags.length > 0 ? tags.join(', ') : 'Fabric quality, measurement accuracy, neat pleats, and prompt installation'}.
 Customer Extra Notes: ${customerComment ? customerComment : 'None'}.
 
 Generate 4 natural, realistic, high-converting review variations in English with elegant phrasing and genuine excitement.
 Return ONLY a valid JSON object with the following structure and no markdown formatting:
 {
-  "seo": "A review rich in boutique keywords like designer sarees, soft silk, chudi sets, boutique collection, fabric finish",
+  "seo": "A review rich in showroom keywords like custom curtains, zebra blinds, mosquito mesh doors, blackout drapes, Cumbum, fabric finish",
   "enthusiastic": "An excited, highly passionate review with emojis",
   "short": "A crisp, concise 2-sentence review",
-  "detailed": "A comprehensive paragraph describing the outfits, fabric quality, and hospitality",
-  "keywords": ["5 local keyword phrases like 'Shree Curtains', 'curtains Cumbum', 'zebra blinds']
+  "detailed": "A comprehensive paragraph describing the curtain pleating, blind operation, mesh durability, and excellent installation service",
+  "keywords": ["5 local keyword phrases like 'Shree Curtains', 'curtains Cumbum', 'zebra blinds', 'mosquito netlon Cumbum', 'home furnishing']
 }`;
 
   try {

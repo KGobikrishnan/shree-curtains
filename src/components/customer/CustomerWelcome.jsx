@@ -141,7 +141,7 @@ export const CustomerWelcome = () => {
             </div>
             <div>
               <div className="font-black text-xs text-rose-950 leading-tight">I have feedback</div>
-              <div className="text-[9px] font-semibold text-rose-700/90 mt-0.5">Talk to boutique</div>
+              <div className="text-[9px] font-semibold text-rose-700/90 mt-0.5">Talk to store</div>
             </div>
           </button>
         </div>
@@ -227,7 +227,7 @@ export const CustomerWelcome = () => {
             <div className="w-7 h-7 rounded-full bg-rose-50 border border-rose-200 text-rose-700 flex items-center justify-center mb-1 shadow-xs">
               <Users className="w-3 h-3" />
             </div>
-            <div className="font-black text-[10px] text-slate-900 leading-tight">Boutique Stylist</div>
+            <div className="font-black text-[10px] text-slate-900 leading-tight">Expert Support</div>
             <div className="text-[8px] text-slate-400 font-medium">Quick callback</div>
           </div>
         </div>
@@ -252,7 +252,7 @@ export const CustomerWelcome = () => {
               <div className="flex items-center gap-1.5 mb-2.5">
                 <span className="text-xl animate-emoji-loved">😍</span>
                 <div>
-                  <div className="font-black text-[11px] text-emerald-950">Loved the outfit!</div>
+                  <div className="font-black text-[11px] text-emerald-950">Loved the work!</div>
                   <div className="text-[8.5px] font-medium text-emerald-700 leading-tight">Post your 5★ review on Google Maps.</div>
                 </div>
               </div>
@@ -263,8 +263,8 @@ export const CustomerWelcome = () => {
                     <Sparkles className="w-2.5 h-2.5" />
                   </div>
                   <div>
-                    <div className="font-black text-slate-900 text-[10px]">Pick styles</div>
-                    <div className="text-[8px] text-slate-400 font-medium">Sarees, chudis, kurtis, jewellery</div>
+                    <div className="font-black text-slate-900 text-[10px]">Pick items</div>
+                    <div className="text-[8px] text-slate-400 font-medium">Curtains, blinds, mosquito mesh</div>
                   </div>
                 </div>
 
@@ -309,7 +309,7 @@ export const CustomerWelcome = () => {
                   </div>
                   <div>
                     <div className="font-black text-slate-900 text-[10px]">Share issue</div>
-                    <div className="text-[8px] text-slate-400 font-medium">Sizing, fitting or stock</div>
+                    <div className="text-[8px] text-slate-400 font-medium">Measurement, fitting or mesh</div>
                   </div>
                 </div>
 
@@ -318,7 +318,7 @@ export const CustomerWelcome = () => {
                     <Lock className="w-2.5 h-2.5" />
                   </div>
                   <div>
-                    <div className="font-black text-slate-900 text-[10px]">Goes to boutique</div>
+                    <div className="font-black text-slate-900 text-[10px]">Goes to showroom</div>
                     <div className="text-[8px] text-slate-400 font-medium">100% confidential alert</div>
                   </div>
                 </div>
@@ -328,7 +328,7 @@ export const CustomerWelcome = () => {
                     <HeartHandshake className="w-2.5 h-2.5" />
                   </div>
                   <div>
-                    <div className="font-black text-slate-900 text-[10px]">Easy exchange</div>
+                    <div className="font-black text-slate-900 text-[10px]">Prompt adjustment</div>
                     <div className="text-[8px] text-slate-400 font-medium">Guaranteed satisfaction</div>
                   </div>
                 </div>

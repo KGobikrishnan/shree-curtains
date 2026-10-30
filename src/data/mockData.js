@@ -14,7 +14,7 @@ export const INITIAL_BUSINESS = {
   bannerUrl: "/visiting_card.png",
   tagline: "Specialist in Curtains, Mosquito Door, Blinds, Netlon & Furnishing",
   address: "232/3, LF Road, Cumbum, Theni Dt., - 625 516",
-  googlePlaceUrl: "https://g.page/r/CSkwyUzjxg-pEBM/review",
+  googlePlaceUrl: "https://g.page/r/CTONmpLlmZu-EBM/review",
   verified: true,
   rating: 4.9,
   totalReviews: 850,
@@ -27,7 +27,7 @@ export const INITIAL_MERCHANTS_LIST = [
 ];
 
 // Product & Services Catalogue for Shree Curtains
-export const UMAIYAAL_SERVICE_CATEGORIES = [
+export const SHREE_SERVICE_CATEGORIES = [
   {
     id: 'cat_curtains',
     categoryName: 'Curtains Collection',
@@ -88,8 +88,10 @@ export const UMAIYAAL_SERVICE_CATEGORIES = [
   }
 ];
 
+export const UMAIYAAL_SERVICE_CATEGORIES = SHREE_SERVICE_CATEGORIES;
+
 // Flat list of all 18 specific client services for selection and card rendering
-export const UMAIYAAL_SERVICES = UMAIYAAL_SERVICE_CATEGORIES.flatMap(cat => 
+export const SHREE_SERVICES = SHREE_SERVICE_CATEGORIES.flatMap(cat => 
   cat.items.map(item => ({
     id: item.id,
     name: item.name,
@@ -104,6 +106,8 @@ export const UMAIYAAL_SERVICES = UMAIYAAL_SERVICE_CATEGORIES.flatMap(cat =>
            'from-violet-600 to-purple-600'
   }))
 );
+
+export const UMAIYAAL_SERVICES = SHREE_SERVICES;
 
 export const FEATURE_TAGS = [
   { id: "fabric_quality", title: "Fabric & Material Quality", desc: "Heavy drape fabrics & long-lasting finish", iconName: "Sparkles", defaultSelected: true },
@@ -171,7 +175,7 @@ export const INITIAL_ANALYTICS_DATA = {
 
 // Fallback dynamic generator
 export const getMerchantBySlugOrFallback = (slug, existingList = INITIAL_MERCHANTS_LIST) => {
-  if (!slug || slug === 'shree-curtains' || slug === 'shree' || slug === 'umaiyaal-botique') return INITIAL_BUSINESS;
+  if (!slug || slug === 'shree-curtains' || slug === 'shree') return INITIAL_BUSINESS;
   
   const normalized = slug.toLowerCase().trim();
   const found = existingList.find(m => m.slug.toLowerCase() === normalized || m.id.toLowerCase() === normalized);
