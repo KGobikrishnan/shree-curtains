@@ -25,56 +25,56 @@ const HIGHLIGHT_OPTIONS = [
   {
     id: 'fabric_quality',
     title: 'Fabric Quality',
-    desc: 'Pure soft silk & breathable cotton',
+    desc: 'Heavy drape & luxury textures',
     icon: Sparkles,
     colorClass: 'bg-gradient-to-r from-pink-500 to-rose-600 text-white'
   },
   {
-    id: 'unique_designs',
-    title: 'Unique Designs',
-    desc: 'Exclusive sarees, chudis & co-ords',
+    id: 'accurate_measurement',
+    title: 'Accurate Fitting',
+    desc: 'Pinpoint window measurement & neat fixing',
     icon: Crown,
     colorClass: 'bg-gradient-to-r from-purple-600 to-pink-500 text-white'
   },
   {
-    id: 'fitting_comfort',
-    title: 'Perfect Fit & Comfort',
-    desc: 'Flattering cuts & super soft feel',
+    id: 'fitting_stitching',
+    title: 'Flawless Pleats',
+    desc: 'Uniform eyelet rings & neat stitching',
     icon: Shirt,
     colorClass: 'bg-gradient-to-r from-amber-500 to-rose-500 text-white'
   },
   {
-    id: 'matching_jewellery',
-    title: 'Matching Jewellery',
-    desc: 'Stunning artificial jewellery & shawls',
+    id: 'blinds_netlon',
+    title: 'Mosquito & Netlon',
+    desc: 'Sturdy frames & 100% insect protection',
     icon: Gem,
     colorClass: 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white'
   },
   {
     id: 'pricing',
-    title: 'Affordable Luxury',
-    desc: 'Best pricing for designer pieces',
+    title: 'Affordable Rates',
+    desc: 'Best pricing per meter without hidden cost',
     icon: DollarSign,
     colorClass: 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white'
   },
   {
     id: 'hospitality',
     title: 'Warm Hospitality',
-    desc: 'Courteous & patient boutique staff',
+    desc: 'A. Raja & team polite guidance',
     icon: Heart,
     colorClass: 'bg-gradient-to-r from-rose-500 to-pink-600 text-white'
   },
   {
     id: 'trendy',
-    title: 'Trending Outfits',
-    desc: 'Modern festive & chic daily wear',
+    title: 'Modern Trends',
+    desc: 'Zebra blinds, motorized & blackout drapes',
     icon: Flame,
     colorClass: 'bg-gradient-to-r from-purple-500 to-indigo-600 text-white'
   },
   {
     id: 'trust',
-    title: 'Trusted Boutique',
-    desc: '25,000+ happy shoppers',
+    title: 'Trusted Showroom',
+    desc: '850+ satisfied homes in Cumbum',
     icon: ThumbsUp,
     colorClass: 'bg-gradient-to-r from-amber-600 to-orange-500 text-white'
   }
@@ -190,7 +190,7 @@ export const FeatureSelectionScreen = () => {
             <span className="text-pink-400 text-xs">✦✦</span>
           </h2>
           <p className="text-[11px] text-slate-500 mt-0.5 font-medium">
-            Pick your shopping highlights for your <strong className="text-pink-600 font-extrabold">review ✦</strong>
+            Pick your installation highlights for your <strong className="text-pink-600 font-extrabold">review ✦</strong>
           </p>
         </div>
       </div>
@@ -198,7 +198,7 @@ export const FeatureSelectionScreen = () => {
       {/* Select Highlights Header with Count & Clear All */}
       <div className="w-full flex items-center justify-between px-1 text-xs">
         <div className="flex items-center gap-2">
-          <span className="font-extrabold text-slate-900">Select shopping highlights</span>
+          <span className="font-extrabold text-slate-900">Select installation highlights</span>
           <span className="text-[10px] font-extrabold bg-pink-100 text-pink-700 px-2.5 py-0.5 rounded-full border border-pink-200/60 shadow-2xs">
             {selectedGoodTags.length} selected
           </span>
@@ -263,7 +263,7 @@ export const FeatureSelectionScreen = () => {
       <div className="w-full bg-white rounded-3xl border border-pink-100/90 shadow-2xs p-3.5 text-left">
         <div className="flex items-center gap-1.5 mb-2">
           <MessageSquare className="w-3.5 h-3.5 text-pink-600" />
-          <span className="text-[11px] font-extrabold text-slate-900">Mention your favourite outfit or special note</span>
+          <span className="text-[11px] font-extrabold text-slate-900">Mention your chosen curtains, blinds or special note</span>
           <span className="text-[10px] text-slate-400 font-medium">(optional)</span>
         </div>
 
@@ -273,7 +273,7 @@ export const FeatureSelectionScreen = () => {
             maxLength={100}
             value={customerComment}
             onChange={(e) => setCustomerComment(e.target.value)}
-            placeholder="e.g. Soft silk saree for reception, perfect fit chudi set"
+            placeholder="e.g. Eyelet curtains for living room, zebra blinds & mosquito doors"
             className="w-full text-xs p-3 pr-12 bg-slate-50 border border-slate-200/80 rounded-2xl outline-none focus:ring-2 focus:ring-pink-500 focus:bg-white text-slate-800 placeholder-slate-400 transition-all"
           />
           <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-medium text-slate-400">
@@ -283,7 +283,7 @@ export const FeatureSelectionScreen = () => {
 
         <div className="flex items-center gap-1.5 text-[9.5px] text-slate-400 font-medium mt-2">
           <Lightbulb className="w-3 h-3 text-amber-500 shrink-0" />
-          <span>Add your outfit details to make your review authentic.</span>
+          <span>Add your window or room details to make your review authentic.</span>
         </div>
       </div>
 

@@ -38,7 +38,7 @@ export const ReviewDraftScreen = () => {
 
   const serviceContext = selectedServices && selectedServices.length > 0
     ? selectedServices.join(" & ")
-    : "designer sarees & ethnic wear";
+    : "custom curtains & window blinds";
 
   const is5Star = Number(selectedRating) >= 5;
 
@@ -50,8 +50,8 @@ export const ReviewDraftScreen = () => {
       match: '99% Boost',
       icon: Zap,
       draft: aiTones?.seo || (is5Star
-        ? `5-star shopping experience at ${business.name}! Outstanding collection of ${serviceContext}. Everything was crafted with extreme perfection, pure soft fabrics, and graceful designs. The best women's designer boutique in town! ✨👗`
-        : `Good 4-star experience at ${business.name}. Bought ${serviceContext}. Neat finishing, fair rates, and patient customer assistance. Definitely recommended!`)
+        ? `5-star experience at ${business.name}! Outstanding collection and installation of ${serviceContext}. Pinpoint window measurements, neat stitching, and very polite guidance by A. Raja sir. Best curtain and furnishing showroom in Cumbum! ✨🪟`
+        : `Good 4-star experience at ${business.name}. Ordered ${serviceContext}. Neat finishing, timely fitting, and honest pricing. Definitely recommended!`)
     },
     {
       id: 'enthusiastic',
@@ -59,7 +59,7 @@ export const ReviewDraftScreen = () => {
       match: '98% Boost',
       icon: Heart,
       draft: aiTones?.enthusiastic || (is5Star
-        ? `Blown away by ${business.name}! Absolutely loved the ${serviceContext} collection and breathtaking drape. The staff was so welcoming and helped me pick the best match. Cannot wait to recommend to all my friends! ⭐⭐⭐⭐⭐`
+        ? `Blown away by ${business.name}! Absolutely loved the ${serviceContext} work and breathtaking drape. A. Raja sir and his team did a neat and quick installation. Cannot wait to recommend to all my friends! ⭐⭐⭐⭐⭐`
         : `Really happy with my purchase at ${business.name}! The pieces in ${serviceContext} turned out lovely. Courteous team and pleasant shopping ambience. 👍💖`)
     },
     {
@@ -68,8 +68,8 @@ export const ReviewDraftScreen = () => {
       match: '96% Boost',
       icon: Zap,
       draft: aiTones?.short || (is5Star
-        ? `Great visit to ${business.name}. Found wonderful ${serviceContext}. Perfect fit, friendly boutique staff, and top fabric quality overall. Highly recommend!`
-        : `Decent and prompt shopping experience for ${serviceContext} at ${business.name}. Fair pricing and neat collections.`)
+        ? `Great visit to ${business.name}, LF Road Cumbum. Found wonderful ${serviceContext}. Perfect fit, friendly staff, and top fabric quality overall. Highly recommend!`
+        : `Decent and prompt installation of ${serviceContext} at ${business.name}. Fair pricing and neat work.`)
     },
     {
       id: 'detailed',
@@ -77,15 +77,15 @@ export const ReviewDraftScreen = () => {
       match: '95% Boost',
       icon: Star,
       draft: aiTones?.detailed || (is5Star
-        ? `Visited ${business.name} today for ${serviceContext} and was super impressed. The fabric touch was pure luxury, genuine artisan prints, and great value for money. Definitely standard-setting for designer boutique shopping in the area!`
-        : `Bought ${serviceContext} from ${business.name}. The cuts were comfortable, good quality fabrics used, and patient staff assistance. Solid experience overall.`)
+        ? `Visited ${business.name} on LF Road, Cumbum today for ${serviceContext} and was super impressed. The fabric touch was pure luxury, genuine materials, and great value for money. Definitely standard-setting for home interior furnishing in the area!`
+        : `Bought ${serviceContext} from ${business.name}. The measurements were accurate, good quality fabrics used, and patient staff assistance. Solid experience overall.`)
     }
   ];
 
   // Dynamic SEO keywords
   const activeKeywords = aiKeywords && aiKeywords.length > 0
     ? aiKeywords
-    : ['designer sarees', 'soft silk', 'chudi sets', 'co-ord sets', 'kurtis', 'artificial jewellery'];
+    : ['custom curtains', 'zebra blinds', 'mosquito door', 'netlon screen', 'blackout drapes', 'home furnishing'];
 
   // Sync draft when active tone or aiTones updates
   useEffect(() => {
@@ -291,7 +291,7 @@ export const ReviewDraftScreen = () => {
               <div className="w-full space-y-2 py-1">
                 <div className="flex items-center gap-2 text-pink-600 text-xs font-bold animate-pulse">
                   <Sparkles className="w-3.5 h-3.5 animate-spin" />
-                  <span>Mozhi AI is crafting your boutique review...</span>
+                  <span>Mozhi AI is crafting your Shree Curtains review...</span>
                 </div>
                 <div className="h-2 bg-pink-100 rounded-full w-full animate-pulse" />
                 <div className="h-2 bg-pink-100 rounded-full w-3/4 animate-pulse" />
